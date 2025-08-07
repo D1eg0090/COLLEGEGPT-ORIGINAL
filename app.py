@@ -3,7 +3,7 @@ from flask_cors import CORS
 import openai
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*")
 
 openai.api_key = "Api_Open_key"  # ← Poné tu clave aquí
 
